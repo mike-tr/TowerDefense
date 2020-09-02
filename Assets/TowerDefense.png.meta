@@ -1,0 +1,415 @@
+fileFormatVersion: 2
+guid: 65db64ffa7ca04049a65bad4d70edcd4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -908620174758156265
+    second: TowerDefense_0
+  - first:
+      213: 6583685841737795225
+    second: TowerDefense_1
+  - first:
+      213: 645021536014844351
+    second: TowerDefense_2
+  - first:
+      213: -6195881925534758865
+    second: TowerDefense_3
+  - first:
+      213: -9184052168709812346
+    second: TowerDefense_4
+  - first:
+      213: 3765802812155088030
+    second: TowerDefense_5
+  - first:
+      213: -4592824879220845305
+    second: TowerDefense_6
+  - first:
+      213: 2659013028727144048
+    second: TowerDefense_7
+  - first:
+      213: 8422116496370564441
+    second: TowerDefense_8
+  - first:
+      213: -3780387289533782751
+    second: TowerDefense_9
+  - first:
+      213: 2507063608724092494
+    second: TowerDefense_10
+  - first:
+      213: -1875571804366842380
+    second: TowerDefense_11
+  - first:
+      213: 5136500412921206621
+    second: TowerDefense_12
+  - first:
+      213: -7950698256147137467
+    second: TowerDefense_13
+  - first:
+      213: 9222143902329542018
+    second: TowerDefense_14
+  - first:
+      213: -5971314001343479730
+    second: TowerDefense_15
+  - first:
+      213: 5429412431769654076
+    second: TowerDefense_16
+  - first:
+      213: 4958137018220268973
+    second: TowerDefense_17
+  - first:
+      213: -6624906274309738986
+    second: TowerDefense_18
+  - first:
+      213: -5581744500919506307
+    second: TowerDefense_19
+  - first:
+      213: -7006341681009600353
+    second: TowerDefense_20
+  - first:
+      213: -7405131130518623110
+    second: TowerDefense_21
+  - first:
+      213: 6122285792673598152
+    second: TowerDefense_22
+  - first:
+      213: -3758868101596374801
+    second: TowerDefense_23
+  - first:
+      213: 5724855638386264105
+    second: TowerDefense_24
+  - first:
+      213: 6247913515710214582
+    second: TowerDefense_25
+  - first:
+      213: -8242273412340552502
+    second: TowerDefense_26
+  - first:
+      213: 5835685581360487558
+    second: TowerDefense_27
+  - first:
+      213: -7263053162503955321
+    second: TowerDefense_28
+  - first:
+      213: 4305728551916803861
+    second: TowerDefense_29
+  - first:
+      213: 7707243557580765819
+    second: TowerDefense_30
+  - first:
+      213: -2399837012252796635
+    second: TowerDefense_31
+  - first:
+      213: -7622486358951241247
+    second: TowerDefense_32
+  - first:
+      213: 5521421853738361074
+    second: TowerDefense_33
+  - first:
+      213: -5330840099755457315
+    second: TowerDefense_34
+  - first:
+      213: -1294328870005858004
+    second: TowerDefense_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TowerDefense_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71869cfd3cee363f0800000000000000
+      internalID: -908620174758156265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996cc852463fd5b50800000000000000
+      internalID: 6583685841737795225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb144a66ba393f800800000000000000
+      internalID: 645021536014844351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28cc36473ec30aa0800000000000000
+      internalID: -6195881925534758865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f45653631bb8080800000000000000
+      internalID: -9184052168709812346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ccba0a4b1d24430800000000000000
+      internalID: 3765802812155088030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705177e2b120340c0800000000000000
+      internalID: -4592824879220845305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_7
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07eba66f246b6e420800000000000000
+      internalID: 2659013028727144048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TowerDefense_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dff17c45e51e470800000000000000
+      internalID: 8422116496370564441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
