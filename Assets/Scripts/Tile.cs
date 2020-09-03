@@ -15,6 +15,9 @@ public class Tile {
         this.drawer = drawer;
         this.x = x;
         this.y = y;
+        this.type = type;
+
+        Update ();
     }
 
     public void Update () {
