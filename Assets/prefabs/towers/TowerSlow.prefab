@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1578354407325208915}
   - component: {fileID: 8438133148756994061}
-  - component: {fileID: 6808623237274317437}
+  - component: {fileID: -2578367723830263330}
   m_Layer: 0
   m_Name: TowerSlow
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6808623237274317437
+--- !u!114 &-2578367723830263330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4286170718671041742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6f7b2d4386a32047b43b4f4fcbc2637, type: 3}
+  m_Script: {fileID: 11500000, guid: 320800ec4f0bbc947abcb7989aac36da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 8
-  AttackSpeed: 1
-  Damage: 1
+  id: 4
+  Attackspeed: 1
+  damage: 1

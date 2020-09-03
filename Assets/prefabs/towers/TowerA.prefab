@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1746045922372985632}
   - component: {fileID: 8129267312603700422}
-  - component: {fileID: 3580127284653393665}
+  - component: {fileID: -8017522140758385795}
   m_Layer: 0
   m_Name: TowerA
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3580127284653393665
+--- !u!114 &-8017522140758385795
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,6 +92,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3730919680834192436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6f7b2d4386a32047b43b4f4fcbc2637, type: 3}
+  m_Script: {fileID: 11500000, guid: 320800ec4f0bbc947abcb7989aac36da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  id: 1
+  Attackspeed: 1
+  damage: 1

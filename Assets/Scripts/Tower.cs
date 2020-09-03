@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tower : MonoBehaviour {
-
-    public int type = 1;
-    public float AttackSpeed = 1;
-    public float Damage = 1;
+public class Tower : NodeObject {
+    // Start is called before the first frame update
+    public float attackSpeed = 1;
+    public float damage = 1;
     void Start () {
 
     }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3535912403250598378}
   - component: {fileID: 4309471268701580184}
-  - component: {fileID: -6938161232618327855}
+  - component: {fileID: 7135654157406410862}
   m_Layer: 0
   m_Name: TowerB
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-6938161232618327855
+--- !u!114 &7135654157406410862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2939279613442275673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6f7b2d4386a32047b43b4f4fcbc2637, type: 3}
+  m_Script: {fileID: 11500000, guid: 320800ec4f0bbc947abcb7989aac36da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 2
-  AttackSpeed: 1
-  Damage: 1
+  id: 2
+  Attackspeed: 1
+  damage: 1

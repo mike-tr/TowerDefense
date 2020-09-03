@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8976421479608418745}
   - component: {fileID: 7313140051701005900}
-  - component: {fileID: -4017307146261328593}
+  - component: {fileID: 5361407246616963686}
   m_Layer: 0
   m_Name: TowerDegen
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-4017307146261328593
+--- !u!114 &5361407246616963686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,9 +92,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3968673274455999433}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6f7b2d4386a32047b43b4f4fcbc2637, type: 3}
+  m_Script: {fileID: 11500000, guid: 320800ec4f0bbc947abcb7989aac36da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 4
-  AttackSpeed: 1
-  Damage: 1
+  id: 3
+  Attackspeed: 1
+  damage: 1
