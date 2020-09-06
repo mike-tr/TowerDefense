@@ -8,6 +8,13 @@ public class Node {
     public readonly Board board;
     public NodeObject terrain;
     public NodeObject nodeObject;
+
+    public Vector3 position {
+        get {
+            return board.transform.position + new Vector3 (x, y, 0);
+        }
+    }
+
     public Node (Board board, int x, int y, int type) {
         this.board = board;
         this.x = x;

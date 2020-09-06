@@ -38,6 +38,14 @@ public class Board : MonoBehaviour {
         }
     }
 
+    public Node NodeFromWorldPoint (Vector2 pos) {
+        pos -= (Vector2) transform.position - Vector2.one * 0.5f;
+        if (pos.x < 0 || pos.y < 0 || pos.x > sizeX || pos.y > sizeY) {
+            return null;
+        }
+        return map[(int) pos.x, (int) pos.y];
+    }
+
     public NodeObject CreateTerrainObject (int type) {
         if (type == -1) {
             return Instantiate (WallPrefab);
@@ -53,4 +61,5 @@ public class Board : MonoBehaviour {
             return null;
         }
     }
+
 }

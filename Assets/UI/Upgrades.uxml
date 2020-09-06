@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button text="Button" display-tooltip-when-elided="True" style="width: 70px; height: 70px; max-width: 90%; max-height: 90%; background-image: url(&apos;/Assets/Textures/Icon.png&apos;);" />
+    <ui:Button text="Button" display-tooltip-when-elided="True" style="width: 70px; height: 70px; max-width: 90%; max-height: 90%; background-image: url(&apos;/Assets/Textures/Icon.png&apos;); -unity-background-image-tint-color: rgb(255, 255, 255); -unity-background-scale-mode: stretch-to-fill;" />
+    <ui:Button text="Button" display-tooltip-when-elided="True" style="width: 70px; height: 15%; max-width: 90%; max-height: 90%; background-image: url(&apos;/Assets/Textures/Icon.png&apos;);" />
+</ui:UXML>
