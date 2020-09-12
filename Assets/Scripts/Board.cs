@@ -12,10 +12,12 @@ public class Board : MonoBehaviour {
     public Vector2 center;
     // Start is called before the first frame update
     public Tower[] towers;
+    public Tower[] defaultUpgrades;
     Dictionary<int, NodeObject> nodeObjects = new Dictionary<int, NodeObject> ();
 
     void Start () {
         nodeObjects.Add (PortalPrefab.id, PortalPrefab);
+        nodeObjects.Add (WallPrefab.id, WallPrefab);
         foreach (var tower in towers) {
             nodeObjects.Add (tower.id, tower);
         }
@@ -46,10 +48,7 @@ public class Board : MonoBehaviour {
         return map[(int) pos.x, (int) pos.y];
     }
 
-    public NodeObject CreateTerrainObject (int type) {
-        if (type == -1) {
-            return Instantiate (WallPrefab);
-        }
+    public NodeObject CreateTerrainObject () {
         return Instantiate (FloorPrefab);
     }
 

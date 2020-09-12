@@ -96,5 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  Attackspeed: 1
+  attackSpeed: 1
   damage: 1
+  cost: 50
+  icon: {fileID: 645021536014844351, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}

@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class NodeObject : MonoBehaviour {
     public int id;
+    public Tower[] upgradeList;
 }

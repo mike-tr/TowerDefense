@@ -32,6 +32,8 @@ public class UserInputManager : MonoBehaviour {
                 if (node != null) {
                     marker.gameObject.SetActive (true);
                     marker.position = node.position;
+
+                    UIManager.instance.ShowUpgrades (node);
                 } else {
                     marker.gameObject.SetActive (false);
                 }
@@ -62,16 +64,27 @@ public class UserInputManager : MonoBehaviour {
 
         var offset = (Vector2) camTransform.position - targetBoard.center;
 
-        if (halfY - verticalBound < Mathf.Abs (offset.y)) {
-            if (Vector2.Dot (new Vector2 (0, offset.y), movement) >= 0) {
-                movement.y = 0;
+        var maxY = halfY - verticalBound;
+        if (maxY > 0.1) {
+            if (maxY < Mathf.Abs (offset.y)) {
+                if (Vector2.Dot (new Vector2 (0, offset.y), movement) >= 0) {
+                    movement.y = 0;
+                }
             }
+        } else {
+            movement.y = 0;
         }
 
-        if (halfX - horizontalBound < Mathf.Abs (offset.x)) {
-            if (Vector2.Dot (new Vector2 (offset.x, 0), movement) >= 0) {
-                movement.x = 0;
+        var maxX = halfX - horizontalBound;
+        if (maxX > 0.1f) {
+            if (maxX < Mathf.Abs (offset.x)) {
+                if (Vector2.Dot (new Vector2 (offset.x, 0), movement) >= 0) {
+                    movement.x = 0;
+                }
+
             }
+        } else {
+            movement.x = 0;
         }
 
         if (Input.GetKeyDown (KeyCode.R)) {
