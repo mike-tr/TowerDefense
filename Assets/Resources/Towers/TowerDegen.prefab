@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4286170718671041742
+--- !u!1 &3968673274455999433
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1578354407325208915}
-  - component: {fileID: 8438133148756994061}
-  - component: {fileID: -2578367723830263330}
+  - component: {fileID: 8976421479608418745}
+  - component: {fileID: 7313140051701005900}
+  - component: {fileID: 5361407246616963686}
   m_Layer: 0
-  m_Name: TowerSlow
+  m_Name: TowerDegen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1578354407325208915
+--- !u!4 &8976421479608418745
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4286170718671041742}
+  m_GameObject: {fileID: 3968673274455999433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.14, y: -0.29, z: 0}
+  m_LocalPosition: {x: -2.53, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8438133148756994061
+--- !u!212 &7313140051701005900
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4286170718671041742}
+  m_GameObject: {fileID: 3968673274455999433}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 645021536014844351, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}
+  m_Sprite: {fileID: -6195881925534758865, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,20 +83,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-2578367723830263330
+--- !u!114 &5361407246616963686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4286170718671041742}
+  m_GameObject: {fileID: 3968673274455999433}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 320800ec4f0bbc947abcb7989aac36da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
+  upgradeList:
+  - {fileID: 5164562608080973791, guid: 480926f7a5354274e9fa59c6cbdec6aa, type: 3}
+  - {fileID: 1060673380571778668, guid: c9465a1d8fdbc5349bb8beba406ea720, type: 3}
   attackSpeed: 1
   damage: 1
   cost: 50
-  icon: {fileID: 645021536014844351, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}
+  icon: {fileID: -6195881925534758865, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}

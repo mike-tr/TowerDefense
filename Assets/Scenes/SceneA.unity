@@ -516,11 +516,6 @@ MonoBehaviour:
   WallPrefab: {fileID: 6355040414924939970, guid: 049616e135a92af4280a4265685c5ec8, type: 3}
   PortalPrefab: {fileID: 6912837229496146987, guid: b69c41e3891d97b4798cf81049292391, type: 3}
   center: {x: 0, y: 0}
-  towers:
-  - {fileID: -8017522140758385795, guid: d33cce4d38eb28e49ac293d7eefc3996, type: 3}
-  - {fileID: 7135654157406410862, guid: 6076020b0930fe94b958659037d2f717, type: 3}
-  - {fileID: 5361407246616963686, guid: 56fd68201bed089468bbfd6ca75c7d87, type: 3}
-  - {fileID: -2578367723830263330, guid: 7a158668eaa4343429aee7798677add1, type: 3}
   defaultUpgrades:
   - {fileID: 7135654157406410862, guid: 6076020b0930fe94b958659037d2f717, type: 3}
   - {fileID: 5361407246616963686, guid: 56fd68201bed089468bbfd6ca75c7d87, type: 3}

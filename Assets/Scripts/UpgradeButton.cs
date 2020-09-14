@@ -19,12 +19,15 @@ public class UpgradeButton : MonoBehaviour {
         this.currentUpgrade = upgrade;
         this.id = id;
 
-        icon.sprite = upgrade.GetUpgradeIcon ();
+        var iconData = upgrade.GetUpgradeIcon ();
+        icon.color = iconData.Item2;
+        icon.sprite = iconData.Item1;
     }
 
     public void ApplyUpgrade () {
         // on click
         current.HandleUpgrade (id);
+        UIManager.instance.ShowUpgrades (current);
     }
 
     // Update is called once per frame

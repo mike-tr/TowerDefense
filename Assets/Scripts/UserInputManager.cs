@@ -35,7 +35,7 @@ public class UserInputManager : MonoBehaviour {
 
                     UIManager.instance.ShowUpgrades (node);
                 } else {
-                    marker.gameObject.SetActive (false);
+                    //marker.gameObject.SetActive (false);
                 }
             }
         }

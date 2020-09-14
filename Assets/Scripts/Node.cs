@@ -62,7 +62,7 @@ public class Node {
 
     public void UpdateObject () {
         if (nodeObject != null) {
-            GameObject.Destroy (nodeObject);
+            GameObject.Destroy (nodeObject.gameObject);
         }
 
         if (type == 0) {

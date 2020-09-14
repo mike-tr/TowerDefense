@@ -10,12 +10,13 @@ public class Tower : NodeObject {
     public float cost = 50f;
 
     [SerializeField] private Sprite icon;
+    private Color color;
     void Start () {
 
     }
 
-    public Sprite GetUpgradeIcon () {
-        return icon;
+    public (Sprite, Color) GetUpgradeIcon () {
+        return (icon, color);
     }
 
     private void OnValidate () {
@@ -23,6 +24,7 @@ public class Tower : NodeObject {
             var renderer = GetComponent<SpriteRenderer> ();
             icon = renderer.sprite;
         }
+        color = GetComponent<SpriteRenderer> ().color;
     }
 
     // Update is called once per frame
