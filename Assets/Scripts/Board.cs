@@ -53,6 +53,13 @@ public class Board : MonoBehaviour {
         return map[(int) pos.x, (int) pos.y];
     }
 
+    public Node GetNode (int x, int y) {
+        if (x < 0 || x > sizeX - 1 || y < 0 || y > sizeY - 1) {
+            return null;
+        }
+        return map[x, y];
+    }
+
     public NodeObject CreateTerrainObject () {
         return Instantiate (FloorPrefab);
     }

@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 248323729}
   - component: {fileID: 248323728}
+  - component: {fileID: 248323730}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -169,6 +170,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248323730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248323727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be8af67bfdacf03489f870914fe4a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 1
+  y: 1
+  xe: 10
+  ye: 10
+  board: {fileID: 1493619677}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,8 +528,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2932903151679b747ae481a2304fa5b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sizeX: 19
-  sizeY: 15
+  sizeX: 11
+  sizeY: 11
   FloorPrefab: {fileID: -4028758338194084403, guid: 541fbecf99a04d4458f9b341dec86131, type: 3}
   WallPrefab: {fileID: 6355040414924939970, guid: 049616e135a92af4280a4265685c5ec8, type: 3}
   PortalPrefab: {fileID: 6912837229496146987, guid: b69c41e3891d97b4798cf81049292391, type: 3}
