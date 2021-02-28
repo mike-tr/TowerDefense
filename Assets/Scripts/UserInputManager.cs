@@ -34,6 +34,7 @@ public class UserInputManager : MonoBehaviour {
                     marker.position = node.position;
 
                     UIManager.instance.ShowUpgrades (node);
+                    Debug.Log ("x : " + node.x + ", y : " + node.y + ", walkable : " + node.walkable);
                 } else {
                     //marker.gameObject.SetActive (false);
                 }

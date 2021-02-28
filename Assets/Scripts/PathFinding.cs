@@ -82,7 +82,7 @@ public class PathFinding : MonoBehaviour {
             sw.Start ();
             path = FindPath (start, end);
             sw.Stop ();
-            Debug.Log (sw.ElapsedMilliseconds);
+            // Debug.Log (sw.ElapsedMilliseconds);
             if (path != null) {
                 foreach (var node in path) {
                     node.ColorNode (Color.white);

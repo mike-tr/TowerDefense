@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3053499554851922147}
   - component: {fileID: 8569663605194822873}
+  - component: {fileID: 849963504133170219}
   m_Layer: 0
   m_Name: EnemyC
   m_TagString: Untagged
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &849963504133170219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091885352526830876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de27ebf12a2b0df4b8d4a901e77e4fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -11,7 +11,7 @@ public class Node {
 
     public bool walkable {
         get {
-            return type == 0;
+            return type == Board.EMPTY || type == Board.PORTAL;
         }
     }
 
@@ -57,6 +57,10 @@ public class Node {
         return false;
     }
 
+    public override string ToString () {
+        return "x : " + x + ", y : " + y + ", type : " + type;
+    }
+
     public List<Node> GetNeighbours () {
         List<Node> list = new List<Node> ();
         for (int i = -1; i < 2; i++) {
@@ -83,6 +87,15 @@ public class Node {
                 type = 0;
                 UpdateNode ();
             } else {
+                if (type == 0) {
+                    type = -1;
+                    if (board.IsViablePath () == false) {
+                        type = 0;
+                        Debug.Log ("Impossible to build here.");
+                        return;
+                    }
+                }
+                // board.ResetPathAll ();
                 // build the tower.
                 bool enoughMoney = true;
                 if (enoughMoney) {
@@ -97,7 +110,7 @@ public class Node {
         if (nodeObject != null) {
             return nodeObject.upgradeList;
         }
-        return board.defaultUpgrades;
+        return board.startingTowers;
     }
 
     public void UpdateNode () {
@@ -105,7 +118,7 @@ public class Node {
             GameObject.Destroy (terrain);
         }
         terrain = board.CreateTerrainObject ();
-        terrain.transform.parent = board.transform;
+        terrain.transform.parent = board.terrainHolder;
         terrain.transform.localPosition = new Vector2 (x, y);
 
         UpdateObject ();
@@ -121,7 +134,7 @@ public class Node {
         }
 
         nodeObject = board.CreateObject (type);
-        nodeObject.transform.parent = terrain.transform;
-        nodeObject.transform.localPosition = Vector2.zero;
+        nodeObject.transform.parent = board.structuresHolder;
+        nodeObject.transform.localPosition = new Vector2 (x, y);
     }
 }

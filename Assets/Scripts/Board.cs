@@ -9,12 +9,35 @@ public class Board : MonoBehaviour {
     public NodeObject FloorPrefab;
     public NodeObject WallPrefab;
     public NodeObject PortalPrefab;
+
+    public Monster[] monsters;
     public Vector2 center;
     // Start is called before the first frame update
-    public Tower[] defaultUpgrades;
+    public Tower[] startingTowers;
     Dictionary<int, NodeObject> nodeObjects = new Dictionary<int, NodeObject> ();
+    private List<Node> portals = new List<Node> ();
+
+    public const int EMPTY = 0;
+    public const int PORTAL = -2;
+    public const int WALL = -1;
+
+    [HideInInspector] public Transform terrainHolder, structuresHolder, monstersHolder;
+
+    private MonsterSpawner spawner;
 
     void Start () {
+        terrainHolder = new GameObject ("Terrain").transform;
+        structuresHolder = new GameObject ("Structures").transform;
+        monstersHolder = new GameObject ("Monsters").transform;
+
+        terrainHolder.parent = transform;
+        structuresHolder.parent = transform;
+        monstersHolder.parent = transform;
+
+        terrainHolder.position = Vector3.zero;
+        structuresHolder.position = Vector3.zero;
+        monstersHolder.position = Vector3.zero;
+
         var towers = Resources.LoadAll ("Towers", typeof (Tower));
         AddGameObject (PortalPrefab);
         AddGameObject (WallPrefab);
@@ -29,15 +52,33 @@ public class Board : MonoBehaviour {
             for (int y = 0; y < sizeY; y++) {
                 if (x == 0 || x + 1 == sizeX || y == 0 || y + 1 == sizeY) {
                     if (y == sizeY / 2) {
-                        map[x, y] = new Node (this, x, y, -2);
+                        map[x, y] = new Node (this, x, y, PORTAL);
+                        portals.Add (map[x, y]);
                         continue;
                     }
-                    map[x, y] = new Node (this, x, y, -1);
+                    map[x, y] = new Node (this, x, y, WALL);
                     continue;
                 }
-                map[x, y] = new Node (this, x, y, 0);
+                map[x, y] = new Node (this, x, y, EMPTY);
             }
         }
+
+        spawner = gameObject.AddComponent<MonsterSpawner> ();
+        spawner.Initialize (this, 1);
+    }
+
+    public void ResetPathAll () {
+        // spawner.ResetPathForAll ();
+    }
+
+    public Monster SpawnMonster (int index) {
+        var monster = Instantiate (monsters[index]);
+        monster.Initialize (this, portals[0], portals[1]);
+        return monster;
+    }
+
+    public Node GetPortal (int index) {
+        return portals[index];
     }
 
     private void AddGameObject (NodeObject nobject) {
@@ -73,4 +114,8 @@ public class Board : MonoBehaviour {
         }
     }
 
+    public bool IsViablePath () {
+        var path = PathFinding.FindPath (portals[0], portals[1]);
+        return path != null;
+    }
 }
