@@ -66,28 +66,28 @@ public class PathFinding : MonoBehaviour {
     public bool recalculate = true;
     private List<Node> path = new List<Node> ();
 
-    private void Update () {
-        if (recalculate && board.map != null) {
-            if (path != null)
-                foreach (var node in path) {
-                    node.ResetColor ();
-                }
+    // private void Update () {
+    //     if (recalculate && board.map != null) {
+    //         if (path != null)
+    //             foreach (var node in path) {
+    //                 node.ResetColor ();
+    //             }
 
-            var start = board.GetNode (xstart, ystart);
-            var end = board.GetNode (xend, yend);
-            if (start == null || end == null) {
-                return;
-            }
-            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch ();
-            sw.Start ();
-            path = FindPath (start, end);
-            sw.Stop ();
-            // Debug.Log (sw.ElapsedMilliseconds);
-            if (path != null) {
-                foreach (var node in path) {
-                    node.ColorNode (Color.white);
-                }
-            }
-        }
-    }
+    //         var start = board.GetNode (xstart, ystart);
+    //         var end = board.GetNode (xend, yend);
+    //         if (start == null || end == null) {
+    //             return;
+    //         }
+    //         System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch ();
+    //         sw.Start ();
+    //         path = FindPath (start, end);
+    //         sw.Stop ();
+    //         // Debug.Log (sw.ElapsedMilliseconds);
+    //         if (path != null) {
+    //             foreach (var node in path) {
+    //                 node.ColorNode (Color.white);
+    //             }
+    //         }
+    //     }
+    // }
 }

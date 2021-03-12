@@ -18,6 +18,12 @@ public class MonsterSpawner : MonoBehaviour {
         this.maxSpawned = maxSpawned;
     }
 
+    public void ResetAllPath () {
+        foreach (var monster in spawnedMonsters) {
+            monster.ResetPath ();
+        }
+    }
+
     // Update is called once per frame
     void Update () {
         if (!spawn) {
@@ -38,7 +44,7 @@ public class MonsterSpawner : MonoBehaviour {
             spawned++;
 
             int index = Random.Range (0, 3);
-            board.SpawnMonster (index);
+            spawnedMonsters.Add (board.SpawnMonster (index));
         }
     }
 }

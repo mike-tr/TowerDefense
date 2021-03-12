@@ -61,6 +61,10 @@ public class Node {
         return "x : " + x + ", y : " + y + ", type : " + type;
     }
 
+    public Vector3 GetPosition () {
+        return terrain.transform.position;
+    }
+
     public List<Node> GetNeighbours () {
         List<Node> list = new List<Node> ();
         for (int i = -1; i < 2; i++) {
@@ -95,7 +99,7 @@ public class Node {
                         return;
                     }
                 }
-                // board.ResetPathAll ();
+                board.ResetPathAll ();
                 // build the tower.
                 bool enoughMoney = true;
                 if (enoughMoney) {

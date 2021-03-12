@@ -64,11 +64,11 @@ public class Board : MonoBehaviour {
         }
 
         spawner = gameObject.AddComponent<MonsterSpawner> ();
-        spawner.Initialize (this, 1);
+        spawner.Initialize (this, 10);
     }
 
     public void ResetPathAll () {
-        // spawner.ResetPathForAll ();
+        spawner.ResetAllPath ();
     }
 
     public Monster SpawnMonster (int index) {

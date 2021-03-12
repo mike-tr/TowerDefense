@@ -534,11 +534,18 @@ MonoBehaviour:
   FloorPrefab: {fileID: -4028758338194084403, guid: 541fbecf99a04d4458f9b341dec86131, type: 3}
   WallPrefab: {fileID: 6355040414924939970, guid: 049616e135a92af4280a4265685c5ec8, type: 3}
   PortalPrefab: {fileID: 6912837229496146987, guid: b69c41e3891d97b4798cf81049292391, type: 3}
+  monsters:
+  - {fileID: 1442214457726346163, guid: 22bcdcddac301db4b8612eb6011a0c36, type: 3}
+  - {fileID: -5915038179613759585, guid: a47bd269e2dad534781a8317969f996a, type: 3}
+  - {fileID: 849963504133170219, guid: dae1f1cc4c65b1e449b42d0efbdf5fdb, type: 3}
   center: {x: -50, y: -50}
   startingTowers:
   - {fileID: 5361407246616963686, guid: 56fd68201bed089468bbfd6ca75c7d87, type: 3}
   - {fileID: 7135654157406410862, guid: 6076020b0930fe94b958659037d2f717, type: 3}
   - {fileID: -2578367723830263330, guid: 7a158668eaa4343429aee7798677add1, type: 3}
+  terrainHolder: {fileID: 0}
+  structuresHolder: {fileID: 0}
+  monstersHolder: {fileID: 0}
 --- !u!4 &1493619678
 Transform:
   m_ObjectHideFlags: 0
