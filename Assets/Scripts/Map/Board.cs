@@ -25,6 +25,8 @@ public class Board : MonoBehaviour {
 
     private MonsterSpawner spawner;
 
+    [SerializeField] int enemiesSpawn = 10;
+
     void Start () {
         terrainHolder = new GameObject ("Terrain").transform;
         structuresHolder = new GameObject ("Structures").transform;
@@ -51,7 +53,7 @@ public class Board : MonoBehaviour {
         for (int x = 0; x < sizeX; x++) {
             for (int y = 0; y < sizeY; y++) {
                 if (x == 0 || x + 1 == sizeX || y == 0 || y + 1 == sizeY) {
-                    if (y == sizeY / 2) {
+                    if (x == sizeX / 2) {
                         map[x, y] = new Node (this, x, y, PORTAL);
                         portals.Add (map[x, y]);
                         continue;
@@ -64,7 +66,7 @@ public class Board : MonoBehaviour {
         }
 
         spawner = gameObject.AddComponent<MonsterSpawner> ();
-        spawner.Initialize (this, 10);
+        spawner.Initialize (this, enemiesSpawn);
     }
 
     public void ResetPathAll () {

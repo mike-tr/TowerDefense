@@ -11,12 +11,27 @@ public class Monster : MonoBehaviour {
     private Board board;
     private Node next;
 
+    public float intialHp = 100;
+
     public float speed = 10f;
 
+    private const float closeDist = 0.25f;
+
     private const float speedFactor = 0.001f;
+
+    public Transform rotationTarget;
+
+    private HealthSystem healthSystem;
     // Start is called before the first frame update
     void Start () {
+        healthSystem = new HealthSystem ();
+        healthSystem.Initialize (intialHp, intialHp, GetComponentInChildren<LifeBar> ());
+        healthSystem.OnDeathCallback += OnDeath;
+    }
 
+    void OnDeath () {
+        Debug.Log ("Monster has died");
+        Destroy (gameObject);
     }
 
     public void Initialize (Board board, Node current, Node target) {
@@ -36,19 +51,21 @@ public class Monster : MonoBehaviour {
 
             if (current == path[0]) {
                 if (next == targetNode) {
+
+                    healthSystem.TakeDamage (33f * Time.deltaTime);
                     return;
                 }
                 path.RemoveAt (0);
                 next = path[0];
             } else {
                 var dir = next.GetPosition () - transform.position;
-                if (dir.sqrMagnitude < 0.25 * 0.25) {
+                if (dir.sqrMagnitude < closeDist * closeDist) {
                     current = next;
                 }
                 dir = dir.normalized * speed * speedFactor;
                 transform.position += dir;
 
-                transform.up = transform.up * 0.1f + dir * 0.9f;
+                rotationTarget.up = rotationTarget.up * 0.1f + dir * 0.9f;
             }
 
         } else {
