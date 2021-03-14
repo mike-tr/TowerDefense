@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3968673274455999433}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.11609292, w: 0.9932384}
   m_LocalPosition: {x: -2.53, y: -0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -100,6 +100,11 @@ MonoBehaviour:
   - {fileID: 5164562608080973791, guid: 480926f7a5354274e9fa59c6cbdec6aa, type: 3}
   - {fileID: 1060673380571778668, guid: c9465a1d8fdbc5349bb8beba406ea720, type: 3}
   attackSpeed: 1
-  damage: 1
+  damage: 20
   cost: 50
+  range: 3
+  missleSpeed: 5
+  idleRotationSpeed: 20
   icon: {fileID: -6195881925534758865, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}
+  bullet: {fileID: 3880995059675132166, guid: 87b97a06517f54745ad00eb7c72d69aa, type: 3}
+  searchCD: 0.25

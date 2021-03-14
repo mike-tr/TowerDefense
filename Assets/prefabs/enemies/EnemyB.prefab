@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1338810747671663065}
   - component: {fileID: 1338810747671663078}
-  m_Layer: 0
+  - component: {fileID: 621493697035046782}
+  - component: {fileID: 5181639667049701186}
+  m_Layer: 6
   m_Name: EnemyB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,8 +48,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intialHp: 100
-  speed: 15
+  speed: 5
   rotationTarget: {fileID: 1338810748384648229}
+--- !u!58 &621493697035046782
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338810747671663079}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.32
+--- !u!50 &5181639667049701186
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338810747671663079}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1338810748384648226
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1338810748384648229}
   - component: {fileID: 1338810748384648231}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +176,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1338810747671663065}
     m_Modifications:
+    - target: {fileID: 7962686304629571349, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7962686304745804830, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -185,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthbar
       objectReference: {fileID: 0}
+    - target: {fileID: 7962686304745804831, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7962686305508290144, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
@@ -192,6 +239,22 @@ PrefabInstance:
     - target: {fileID: 7962686305508290144, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962686305508290145, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962686305602928187, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962686305902521345, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7962686306107066570, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f86e8530258dd984da34dc0dd3ad6b33, type: 3}

@@ -45,6 +45,10 @@ public class Monster : MonoBehaviour {
     public void ResetPath () {
         path = null;
     }
+
+    public void TakeDamage (float damage) {
+        healthSystem.TakeDamage (damage);
+    }
     // Update is called once per frame
     void Update () {
         if (path != null) {
@@ -52,7 +56,7 @@ public class Monster : MonoBehaviour {
             if (current == path[0]) {
                 if (next == targetNode) {
 
-                    healthSystem.TakeDamage (33f * Time.deltaTime);
+                    //healthSystem.TakeDamage (0.33 * Time.deltaTime);
                     return;
                 }
                 path.RemoveAt (0);
