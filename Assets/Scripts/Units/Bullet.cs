@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour {
     private float damage = 10;
     private float missleSpeed = 1f;
 
+    private Vector3 dir = Vector3.zero;
+
     public void Initialize (Monster target, float damage, float missleSpeed) {
         this.target = target;
         this.damage = damage;
@@ -22,21 +24,33 @@ public class Bullet : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         if (target) {
-            var dir = target.transform.position - transform.position;
+            dir = target.transform.position - transform.position;
             dir.z = 0;
             dir = dir.normalized;
             transform.up = transform.up * 0.1f + dir * 0.9f;
             transform.position += transform.up * missleSpeed * Time.deltaTime;
             //transform.position += dir * missleSpeed * Time.deltaTime;
-        } else if (frame > 5) {
-            Destroy (gameObject);
         } else {
+            if (dir.sqrMagnitude == 0) {
+                Destroy (gameObject);
+                return;
+            }
+            transform.position += transform.up * missleSpeed * Time.deltaTime;
             frame++;
+            if (frame > 2000) {
+                Destroy (gameObject);
+            }
         }
     }
 
     private void OnTriggerEnter2D (Collider2D other) {
-        if (target && other.transform == target.transform) {
+        if (target == null) {
+            Monster monster = other.transform.GetComponent<Monster> ();
+            if (monster != null) {
+                monster.TakeDamage (damage);
+                Destroy (gameObject);
+            }
+        } else if (other.transform == target.transform) {
             target.TakeDamage (damage);
             Destroy (gameObject);
         }

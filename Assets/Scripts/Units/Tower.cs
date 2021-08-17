@@ -22,9 +22,9 @@ public class Tower : NodeObject {
     private LayerMask layerMask;
 
     [SerializeField] private float searchCD = 0.25f;
+
     void Start () {
         layerMask = LayerMask.NameToLayer ("Monster");
-
         StartCoroutine (Logic ());
     }
 
@@ -45,7 +45,6 @@ public class Tower : NodeObject {
         var t = transform.eulerAngles;
         t.z += idleRotationSpeed * Time.deltaTime;
         transform.eulerAngles = t;
-
     }
 
     IEnumerator Logic () {
@@ -55,8 +54,11 @@ public class Tower : NodeObject {
                 if (coll) {
                     target = coll.transform.GetComponent<Monster> ();
                 }
-                yield return new WaitForSeconds (searchCD);
-                continue;
+
+                if (target == null) {
+                    yield return new WaitForSeconds (searchCD);
+                    continue;
+                }
             }
 
             Bullet newBullet = Instantiate (bullet);

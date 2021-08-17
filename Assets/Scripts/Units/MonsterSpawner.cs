@@ -36,6 +36,14 @@ public class MonsterSpawner : MonoBehaviour {
             StopCoroutine (spawnLoop);
             stop = true;
         }
+
+        if (Input.GetKeyDown (KeyCode.R)) {
+            if (spawn == true && stop == true) {
+                spawn = false;
+                stop = false;
+                spawned = 0;
+            }
+        }
     }
 
     IEnumerator randomSpawn (float time) {

@@ -98,12 +98,12 @@ MonoBehaviour:
   id: 3
   upgradeList:
   - {fileID: 6347698259493900280, guid: 3d4ee867f5fe79f4b9250c9ded629e71, type: 3}
-  attackSpeed: 1
-  damage: 20
+  attackSpeed: 10
+  damage: 2
   cost: 50
-  range: 3
-  missleSpeed: 5
-  idleRotationSpeed: 20
+  range: 4
+  missleSpeed: 10
+  idleRotationSpeed: 555
   icon: {fileID: 6583685841737795225, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}
   bullet: {fileID: 3880995059675132166, guid: 87b97a06517f54745ad00eb7c72d69aa, type: 3}
   searchCD: 0.25

@@ -97,12 +97,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   upgradeList: []
-  attackSpeed: 1
+  attackSpeed: 5
   damage: 20
   cost: 50
   range: 3
-  missleSpeed: 5
-  idleRotationSpeed: 20
+  missleSpeed: 2
+  idleRotationSpeed: 33
   icon: {fileID: 645021536014844351, guid: 65db64ffa7ca04049a65bad4d70edcd4, type: 3}
   bullet: {fileID: 3880995059675132166, guid: 87b97a06517f54745ad00eb7c72d69aa, type: 3}
   searchCD: 0.25

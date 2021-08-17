@@ -28,6 +28,8 @@ public class Board : MonoBehaviour {
     [SerializeField] int enemiesSpawn = 10;
 
     void Start () {
+
+        //w = 10;
         terrainHolder = new GameObject ("Terrain").transform;
         structuresHolder = new GameObject ("Structures").transform;
         monstersHolder = new GameObject ("Monsters").transform;

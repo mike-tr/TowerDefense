@@ -55,7 +55,8 @@ public class Monster : MonoBehaviour {
 
             if (current == path[0]) {
                 if (next == targetNode) {
-
+                    Debug.Log ("Got to target");
+                    Destroy (gameObject);
                     //healthSystem.TakeDamage (0.33 * Time.deltaTime);
                     return;
                 }
